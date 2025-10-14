@@ -1,0 +1,121 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ga_szoft2006\\Desktop\\13WPF\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|c:\\users\\ga_szoft2006\\desktop\\13wpf\\lrdt\\rendeleswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|solutionrelative:lrdt\\rendeleswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|c:\\users\\ga_szoft2006\\desktop\\13wpf\\lrdt\\models\\tetel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|solutionrelative:lrdt\\models\\tetel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|c:\\users\\ga_szoft2006\\desktop\\13wpf\\lrdt\\models\\rendelestetel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|solutionrelative:lrdt\\models\\rendelestetel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|c:\\users\\ga_szoft2006\\desktop\\13wpf\\lrdt\\models\\pincer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|solutionrelative:lrdt\\models\\pincer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|c:\\users\\ga_szoft2006\\desktop\\13wpf\\lrdt\\models\\asztal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|solutionrelative:lrdt\\models\\asztal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|c:\\users\\ga_szoft2006\\desktop\\13wpf\\lrdt\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|solutionrelative:lrdt\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RendelesTetel.cs",
+              "DocumentMoniker": "C:\\Users\\ga_szoft2006\\Desktop\\13WPF\\LRDT\\Models\\RendelesTetel.cs",
+              "RelativeDocumentMoniker": "LRDT\\Models\\RendelesTetel.cs",
+              "ToolTip": "C:\\Users\\ga_szoft2006\\Desktop\\13WPF\\LRDT\\Models\\RendelesTetel.cs",
+              "RelativeToolTip": "LRDT\\Models\\RendelesTetel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T10:58:56.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Asztal.cs",
+              "DocumentMoniker": "C:\\Users\\ga_szoft2006\\Desktop\\13WPF\\LRDT\\Models\\Asztal.cs",
+              "RelativeDocumentMoniker": "LRDT\\Models\\Asztal.cs",
+              "ToolTip": "C:\\Users\\ga_szoft2006\\Desktop\\13WPF\\LRDT\\Models\\Asztal.cs",
+              "RelativeToolTip": "LRDT\\Models\\Asztal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T10:58:52.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Pincer.cs",
+              "DocumentMoniker": "C:\\Users\\ga_szoft2006\\Desktop\\13WPF\\LRDT\\Models\\Pincer.cs",
+              "RelativeDocumentMoniker": "LRDT\\Models\\Pincer.cs",
+              "ToolTip": "C:\\Users\\ga_szoft2006\\Desktop\\13WPF\\LRDT\\Models\\Pincer.cs",
+              "RelativeToolTip": "LRDT\\Models\\Pincer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T10:58:51.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Tetel.cs",
+              "DocumentMoniker": "C:\\Users\\ga_szoft2006\\Desktop\\13WPF\\LRDT\\Models\\Tetel.cs",
+              "RelativeDocumentMoniker": "LRDT\\Models\\Tetel.cs",
+              "ToolTip": "C:\\Users\\ga_szoft2006\\Desktop\\13WPF\\LRDT\\Models\\Tetel.cs",
+              "RelativeToolTip": "LRDT\\Models\\Tetel.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T10:55:02.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoginWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ga_szoft2006\\Desktop\\13WPF\\LRDT\\LoginWindow.xaml.cs",
+              "RelativeDocumentMoniker": "LRDT\\LoginWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\ga_szoft2006\\Desktop\\13WPF\\LRDT\\LoginWindow.xaml.cs",
+              "RelativeToolTip": "LRDT\\LoginWindow.xaml.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAwwBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T10:29:25.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RendelesWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\ga_szoft2006\\Desktop\\13WPF\\LRDT\\RendelesWindow.xaml",
+              "RelativeDocumentMoniker": "LRDT\\RendelesWindow.xaml",
+              "ToolTip": "C:\\Users\\ga_szoft2006\\Desktop\\13WPF\\LRDT\\RendelesWindow.xaml",
+              "RelativeToolTip": "LRDT\\RendelesWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-14T10:28:42.937Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
