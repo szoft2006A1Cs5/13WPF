@@ -17,18 +17,30 @@
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0.5*" />
-            <ColumnDefinition Width="0.5*" />
-            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
 
         <TextBlock Grid.Row="1" Text="Aktív rendelések" Margin="5px 0px" />
-        <ListBox x:Name="lbRendelesek" Grid.Row="2" Grid.ColumnSpan="2" Grid.RowSpan="5" Margin="5px" />
+        <ListBox x:Name="lbRendelesek" Grid.Row="2" Grid.ColumnSpan="2" Grid.RowSpan="5" Margin="5px" SelectionChanged="lbRendelesek_SelectionChanged" />
 
         <Button x:Name="btnUjRendeles" Margin="5px" Grid.Row="0" Grid.Column="0" Content="Új rendelés" />
         <Button x:Name="btnRendelesLezar" Margin="5px" Grid.Row="0" Grid.Column="1" Content="Rendelés lezárása" IsEnabled="False" />
 
-        <Image x:Name="imgPincer" Grid.Row="0" Grid.RowSpan="4" Grid.Column="2" HorizontalAlignment="Right" />
+        <Button x:Name="btnHozzaadTetel" Margin="5px" Grid.Row="0" Grid.Column="3" Content="Új tétel" />
+        <Button x:Name="btnEltavolitTetel" Margin="5px" Grid.Row="0" Grid.Column="4" Content="Tétel eltávolítása" IsEnabled="False" />
+
+        <TextBlock Grid.Row="1" Grid.Column="3" Text="Rendelés tételei" Margin="5px 0px" />
+        <DataGrid x:Name="dgOrderItems" CanUserSortColumns="False" CanUserDeleteRows="False" CanUserAddRows="False" CellEditEnding="dgOrderItems_CellEditEnding" ItemsSource="{Binding}" AutoGenerateColumns="False" Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="2" Grid.RowSpan="4" Margin="5px">
+            <DataGrid.Columns>
+                <DataGridTextColumn IsReadOnly="True" Header="Tétel" Binding="{Binding Tetel.Nev}" />
+                <DataGridTextColumn Header="Mennyiség" Binding="{Binding Mennyiseg}" />
+                <DataGridTextColumn IsReadOnly="True" Header="Egységár" Binding="{Binding Tetel.Ar}" />
+                <DataGridTextColumn IsReadOnly="True" Header="Ár" Binding="{Binding OsszAr}" />
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </Window>

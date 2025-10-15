@@ -34,7 +34,7 @@ namespace LRDT
             InitializeComponent();
             
             this.Title = $"{this.SelectedPincer.Nev} - LRDT";
-            imgPincer.Source = SelectedPincer.KepAdat;
+            //imgPincer.Source = SelectedPincer.KepAdat;
 
             foreach (var aktivRendeles in Context.Rendeles
                 .Include(x => x.Asztal)
@@ -54,9 +54,35 @@ namespace LRDT
             }
         }
 
-        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void lbRendelesek_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            if (lbRendelesek.SelectedItem == null) return;
 
+            var selRend = (RendelesListBoxView)lbRendelesek.SelectedItem;
+            dgOrderItems.DataContext = selRend.Rendeles.RendelesTetels;
+        }
+
+        private void dgOrderItems_CellEditEnding(object sender, DataGridCellEditEndingEventArgs e)
+        {
+            if (dgOrderItems.SelectedItem == null) return;
+
+            var rt = ((RendelesTetel)dgOrderItems.SelectedItem);
+            var mennyiseg = 0;
+
+            if (!int.TryParse(((TextBox)(e.EditingElement)).Text, out mennyiseg))
+                return;
+
+            if (mennyiseg <= 0)
+                rt.Rendeles.RendelesTetels.Remove(rt);
+            else
+                rt.Mennyiseg = mennyiseg;
+
+            Context.SaveChanges();
+            var selRend = (RendelesListBoxView)lbRendelesek.SelectedItem;
+            dgOrderItems.DataContext = null; // Valamiert igenyli ezt a null-zast
+            dgOrderItems.DataContext = selRend.Rendeles.RendelesTetels;
+
+            lbRendelesek.Items.Refresh();
         }
     }
 }
