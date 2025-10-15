@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1
--- Létrehozás ideje: 2025. Okt 15. 12:19
+-- Létrehozás ideje: 2025. Okt 13. 12:53
 -- Kiszolgáló verziója: 9.9.0
 -- PHP verzió: 8.2.12
 
@@ -61,9 +61,9 @@ CREATE TABLE `pincer` (
 --
 
 INSERT INTO `pincer` (`id`, `nev`, `kep`) VALUES
-(1, 'Kovács Ádám', './img/kovacs_adam.jpg'),
-(2, 'Nagy Petra', './img/nagy_petra.jpg'),
-(3, 'Tóth Gábor', './img/toth_gabor.jpg');
+(1, 'Kovács Ádám', 'kovacs_adam.jpg'),
+(2, 'Nagy Petra', 'nagy_petra.jpg'),
+(3, 'Tóth Gábor', 'toth_gabor.jpg');
 
 -- --------------------------------------------------------
 
@@ -74,7 +74,7 @@ INSERT INTO `pincer` (`id`, `nev`, `kep`) VALUES
 CREATE TABLE `rendeles` (
   `id` int(11) NOT NULL,
   `datum` date NOT NULL,
-  `fizetesiMod` varchar(64) DEFAULT NULL,
+  `fizetesiMod` varchar(64) NOT NULL,
   `asztalId` int(11) NOT NULL,
   `pincerId` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_hungarian_ci;
@@ -134,12 +134,12 @@ CREATE TABLE `tetel` (
 --
 
 INSERT INTO `tetel` (`id`, `nev`, `ar`, `elerheto`, `kep`, `gyerekFelnott`, `allergen`) VALUES
-(1, 'Gulyásleves', 1800, 1, 'img/gulyasleves.jpg', 0, 'glutén'),
-(2, 'Rántott sajt', 1600, 1, 'img/rantott_sajt.jpg', 0, 'tej, glutén'),
-(3, 'Palacsinta', 900, 1, 'img/palacsinta.jpg', 0, 'tojás, tej, glutén'),
-(4, 'Csirkemell rizssel', 2000, 1, 'img/csirkemell.jpg', 0, ''),
-(5, 'Ásványvíz', 400, 1, 'img/viz.jpg', 0, ''),
-(6, 'Kakaó', 500, 0, 'img/kakao.jpg', 1, 'tej');
+(1, 'Gulyásleves', 1800, 1, 'gulyasleves.jpg', 0, 'glutén'),
+(2, 'Rántott sajt', 1600, 1, 'rantott_sajt.jpg', 0, 'tej, glutén'),
+(3, 'Palacsinta', 900, 1, 'palacsinta.jpg', 0, 'tojás, tej, glutén'),
+(4, 'Csirkemell rizssel', 2000, 1, 'csirkemell.jpg', 0, ''),
+(5, 'Ásványvíz', 400, 1, 'viz.jpg', 0, ''),
+(6, 'Kakaó', 500, 0, 'kakao.jpg', 1, 'tej');
 
 --
 -- Indexek a kiírt táblákhoz

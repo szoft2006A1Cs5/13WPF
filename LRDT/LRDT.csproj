@@ -9,7 +9,49 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="img\csirkemell.jpg" />
+    <None Remove="img\gulyasleves.jpg" />
+    <None Remove="img\kakao.jpg" />
+    <None Remove="img\kovacs_adam.jpg" />
+    <None Remove="img\nagy_petra.jpg" />
+    <None Remove="img\palacsinta.jpg" />
+    <None Remove="img\rantott_sajt.jpg" />
+    <None Remove="img\toth_gabor.jpg" />
+    <None Remove="img\viz.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="MySql.EntityFrameworkCore" Version="9.0.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="img\csirkemell.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\gulyasleves.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kakao.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\kovacs_adam.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\nagy_petra.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\palacsinta.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\rantott_sajt.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\toth_gabor.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\viz.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>

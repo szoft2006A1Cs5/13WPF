@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Media.Imaging;
 
 namespace LRDT.Models
@@ -25,7 +26,7 @@ namespace LRDT.Models
             } 
             set {
                 kepSrc = value;
-                this.KepAdat = new BitmapImage(new Uri(kepSrc, UriKind.RelativeOrAbsolute));
+                this.KepAdat = new BitmapImage(new Uri(kepSrc, UriKind.Relative));
             } 
         }
 
