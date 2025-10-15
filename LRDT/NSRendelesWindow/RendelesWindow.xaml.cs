@@ -40,6 +40,7 @@ namespace LRDT
                 .Include(x => x.Asztal)
                 .Include(x => x.Pincer)
                 .Include(x => x.RendelesTetels)
+                .ThenInclude(x => x.Tetel)
                 .Where(x => x.Pincer.Id == SelectedPincer.Id &&
                             x.FizetesiMod == null
                 )
