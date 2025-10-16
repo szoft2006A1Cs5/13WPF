@@ -28,7 +28,6 @@
         <ListBox x:Name="lbRendelesek" Grid.Row="2" Grid.ColumnSpan="2" Grid.RowSpan="5" Margin="5px" SelectionChanged="lbRendelesek_SelectionChanged" />
 
         <Button x:Name="btnUjRendeles" Margin="5px" Grid.Row="0" Grid.Column="0" Content="Új rendelés" Click="btnUjRendeles_Click" />
-
         <Button x:Name="btnRendelesLezar" Margin="5px" Grid.Row="0" Grid.Column="1" Content="Rendelés lezárása" IsEnabled="False" Click="btnRendelesLezar_Click" />
 
         <Button x:Name="btnHozzaadTetel" Margin="5px" Grid.Row="0" Grid.Column="3" Content="Tétel hozzáadása" />
@@ -43,5 +42,7 @@
                 <DataGridTextColumn IsReadOnly="True" Header="Ár" Binding="{Binding OsszAr}" />
             </DataGrid.Columns>
         </DataGrid>
+
+        <Image Grid.Row="3" Grid.Column="2" Source="/img/logo_lrdt.png" />
     </Grid>
 </Window>
