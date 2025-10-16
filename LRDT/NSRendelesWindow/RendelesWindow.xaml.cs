@@ -34,11 +34,11 @@ namespace LRDT
             InitializeComponent();
             
             this.Title = $"{this.SelectedPincer.Nev} - LRDT";
-            //imgPincer.Source = SelectedPincer.KepAdat;
 
             foreach (var aktivRendeles in Context.Rendeles
                 .Include(x => x.Asztal)
                 .Include(x => x.Pincer)
+                .Include(x => x.FizetesiMod)
                 .Include(x => x.RendelesTetels)
                 .ThenInclude(x => x.Tetel)
                 .Where(x => x.Pincer.Id == SelectedPincer.Id &&
@@ -56,6 +56,8 @@ namespace LRDT
 
         private void lbRendelesek_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            btnRendelesLezar.IsEnabled = lbRendelesek.SelectedItem != null;
+
             if (lbRendelesek.SelectedItem == null) return;
 
             var selRend = (RendelesListBoxView)lbRendelesek.SelectedItem;
@@ -83,6 +85,51 @@ namespace LRDT
             dgOrderItems.DataContext = selRend.Rendeles.RendelesTetels;
 
             lbRendelesek.Items.Refresh();
+        }
+
+        private void btnUjRendeles_Click(object sender, RoutedEventArgs e)
+        {
+            var ujrw = new UjRendelesWindow(Context);
+            ujrw.ShowDialog();
+            
+            if (ujrw.ValasztottAsztal != null)
+            {
+                var rendeles = Context.Rendeles.Add(new Rendeles { 
+                    Asztal = ujrw.ValasztottAsztal,
+                    Datum = DateTime.Now,
+                    Pincer = SelectedPincer,
+                    RendelesTetels = new List<RendelesTetel>(),
+                });
+
+                Context.SaveChanges();
+
+                var rendelesView = new RendelesListBoxView
+                {
+                    Rendeles = rendeles.Entity,
+                };
+
+                lbRendelesek.Items.Add(rendelesView);
+
+                lbRendelesek.SelectedItem = rendelesView;
+            }
+        }
+
+        private void btnRendelesLezar_Click(object sender, RoutedEventArgs e)
+        {
+            if (lbRendelesek.SelectedItem == null) return;
+
+            var rlbv = (RendelesListBoxView)lbRendelesek.SelectedItem;
+
+            var rlw = new RendelesLezarasWindow(Context, rlbv.Rendeles);
+            rlw.ShowDialog();
+
+            if (rlw.Rendeles.FizetesiMod != null)
+            {
+                Context.SaveChanges();
+                lbRendelesek.SelectedItem = null;
+                lbRendelesek.Items.Remove(rlbv);
+                dgOrderItems.DataContext = null;
+            }
         }
     }
 }

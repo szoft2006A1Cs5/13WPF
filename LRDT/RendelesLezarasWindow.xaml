@@ -1,0 +1,29 @@
+﻿<Window x:Class="LRDT.RendelesLezarasWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LRDT"
+        mc:Ignorable="d"
+        Title="RendelesLezarasWindow" Height="450" Width="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="8*" />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="0.5*" />
+            <ColumnDefinition Width="0.5*" />
+        </Grid.ColumnDefinitions>
+
+        <TextBlock x:Name="TBElszamolas" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Margin="5px" />
+        <TextBlock x:Name="TBVegosszeg" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="30px" Margin="5px 0px" />
+        <TextBlock Text="Fizetési mód" Grid.Row="1" Grid.Column="0" VerticalAlignment="Bottom" Margin="5px 0px" />
+        <ComboBox x:Name="cbFizetesiMod" Grid.Row="2" Grid.Column="0" Margin="5px" SelectionChanged="cbFizetesiMod_SelectionChanged"></ComboBox>
+        <Button x:Name="btnLezaras" Content="Lezárás" Grid.Row="2" Grid.Column="1" Margin="5px" IsEnabled="False" Click="btnLezaras_Click" />
+        <Button x:Name="btnVissza" Content="Vissza" Grid.Row="2" Grid.Column="2" Margin="5px" Click="btnVissza_Click" />
+    </Grid>
+</Window>

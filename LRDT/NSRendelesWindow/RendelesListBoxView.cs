@@ -13,7 +13,7 @@ namespace LRDT.NSRendelesWindow
 
         public override string ToString()
         {
-            return $"{Rendeles.Asztal.Id}. asztal - {Rendeles.RendelesTetels.Sum(x => x.Mennyiseg * x.Tetel.Ar)} Ft";
+            return Rendeles.RendelesTetels != null ? $"{Rendeles.Asztal.Id}. asztal - {Rendeles.RendelesTetels.Sum(x => x.Mennyiseg * x.Tetel.Ar)} Ft" : $"{Rendeles.AsztalId}. asztal";
         }
     }
 }

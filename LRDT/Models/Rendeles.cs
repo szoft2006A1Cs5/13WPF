@@ -11,7 +11,8 @@ namespace LRDT.Models
     {
         public int Id { get; set; }
         public DateTime Datum { get; set; }
-        public string? FizetesiMod { get; set; }
+        public int? FizetesiModId { get; set; }
+        public FizetesiMod? FizetesiMod { get; set; }
         public int AsztalId { get; set; }
         public Asztal Asztal { get; set; }
         public int PincerId { get; set; }

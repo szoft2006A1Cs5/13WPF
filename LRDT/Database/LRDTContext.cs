@@ -14,6 +14,7 @@ namespace LRDT.Database
         public DbSet<Asztal> Asztal { get; set; }
         public DbSet<Tetel> Tetel { get; set; }
         public DbSet<Pincer> Pincer { get; set; }
+        public DbSet<FizetesiMod> FizetesiMod { get; set; }
         public DbSet<RendelesTetel> RendelesTetel { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

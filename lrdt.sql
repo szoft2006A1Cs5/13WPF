@@ -2,10 +2,10 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Gép: 127.0.0.1
--- Létrehozás ideje: 2025. Okt 15. 12:19
--- Kiszolgáló verziója: 9.9.0
--- PHP verzió: 8.2.12
+-- Host: 127.0.0.1:3307
+-- Generation Time: Oct 16, 2025 at 10:49 PM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Adatbázis: `lrdt`
+-- Database: `lrdt`
 --
 CREATE DATABASE IF NOT EXISTS `lrdt` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_hungarian_ci;
 USE `lrdt`;
@@ -26,7 +26,7 @@ USE `lrdt`;
 -- --------------------------------------------------------
 
 --
--- Tábla szerkezet ehhez a táblához `asztal`
+-- Table structure for table `asztal`
 --
 
 CREATE TABLE `asztal` (
@@ -35,7 +35,7 @@ CREATE TABLE `asztal` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_hungarian_ci;
 
 --
--- A tábla adatainak kiíratása `asztal`
+-- Dumping data for table `asztal`
 --
 
 INSERT INTO `asztal` (`id`, `ferohely`) VALUES
@@ -47,7 +47,27 @@ INSERT INTO `asztal` (`id`, `ferohely`) VALUES
 -- --------------------------------------------------------
 
 --
--- Tábla szerkezet ehhez a táblához `pincer`
+-- Table structure for table `fizetesimod`
+--
+
+CREATE TABLE `fizetesimod` (
+  `id` int(8) NOT NULL,
+  `nev` varchar(64) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_hungarian_ci;
+
+--
+-- Dumping data for table `fizetesimod`
+--
+
+INSERT INTO `fizetesimod` (`id`, `nev`) VALUES
+(1, 'Készpénz'),
+(2, 'Bankkártya'),
+(3, 'SZÉP Kártya');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `pincer`
 --
 
 CREATE TABLE `pincer` (
@@ -57,7 +77,7 @@ CREATE TABLE `pincer` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_hungarian_ci;
 
 --
--- A tábla adatainak kiíratása `pincer`
+-- Dumping data for table `pincer`
 --
 
 INSERT INTO `pincer` (`id`, `nev`, `kep`) VALUES
@@ -68,30 +88,30 @@ INSERT INTO `pincer` (`id`, `nev`, `kep`) VALUES
 -- --------------------------------------------------------
 
 --
--- Tábla szerkezet ehhez a táblához `rendeles`
+-- Table structure for table `rendeles`
 --
 
 CREATE TABLE `rendeles` (
   `id` int(11) NOT NULL,
   `datum` date NOT NULL,
-  `fizetesiMod` varchar(64) DEFAULT NULL,
+  `fizetesiModId` int(8) DEFAULT NULL,
   `asztalId` int(11) NOT NULL,
   `pincerId` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_hungarian_ci;
 
 --
--- A tábla adatainak kiíratása `rendeles`
+-- Dumping data for table `rendeles`
 --
 
-INSERT INTO `rendeles` (`id`, `datum`, `fizetesiMod`, `asztalId`, `pincerId`) VALUES
-(1, '2025-10-12', 'Készpénz', 1, 1),
-(2, '2025-10-13', 'Bankkártya', 2, 2),
-(3, '2025-10-13', 'SZÉP kártya', 3, 3);
+INSERT INTO `rendeles` (`id`, `datum`, `fizetesiModId`, `asztalId`, `pincerId`) VALUES
+(1, '2025-10-12', 1, 1, 1),
+(2, '2025-10-13', 2, 2, 2),
+(3, '2025-10-13', NULL, 3, 3);
 
 -- --------------------------------------------------------
 
 --
--- Tábla szerkezet ehhez a táblához `rendelestetel`
+-- Table structure for table `rendelestetel`
 --
 
 CREATE TABLE `rendelestetel` (
@@ -101,7 +121,7 @@ CREATE TABLE `rendelestetel` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_hungarian_ci;
 
 --
--- A tábla adatainak kiíratása `rendelestetel`
+-- Dumping data for table `rendelestetel`
 --
 
 INSERT INTO `rendelestetel` (`tetelId`, `rendelesId`, `mennyiseg`) VALUES
@@ -110,13 +130,12 @@ INSERT INTO `rendelestetel` (`tetelId`, `rendelesId`, `mennyiseg`) VALUES
 (2, 2, 1),
 (4, 2, 1),
 (5, 2, 2),
-(3, 3, 3),
-(6, 3, 1);
+(3, 3, 3);
 
 -- --------------------------------------------------------
 
 --
--- Tábla szerkezet ehhez a táblához `tetel`
+-- Table structure for table `tetel`
 --
 
 CREATE TABLE `tetel` (
@@ -130,7 +149,7 @@ CREATE TABLE `tetel` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_hungarian_ci;
 
 --
--- A tábla adatainak kiíratása `tetel`
+-- Dumping data for table `tetel`
 --
 
 INSERT INTO `tetel` (`id`, `nev`, `ar`, `elerheto`, `kep`, `gyerekFelnott`, `allergen`) VALUES
@@ -142,83 +161,97 @@ INSERT INTO `tetel` (`id`, `nev`, `ar`, `elerheto`, `kep`, `gyerekFelnott`, `all
 (6, 'Kakaó', 500, 0, 'img/kakao.jpg', 1, 'tej');
 
 --
--- Indexek a kiírt táblákhoz
+-- Indexes for dumped tables
 --
 
 --
--- A tábla indexei `asztal`
+-- Indexes for table `asztal`
 --
 ALTER TABLE `asztal`
   ADD PRIMARY KEY (`id`);
 
 --
--- A tábla indexei `pincer`
+-- Indexes for table `fizetesimod`
+--
+ALTER TABLE `fizetesimod`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `pincer`
 --
 ALTER TABLE `pincer`
   ADD PRIMARY KEY (`id`);
 
 --
--- A tábla indexei `rendeles`
+-- Indexes for table `rendeles`
 --
 ALTER TABLE `rendeles`
   ADD PRIMARY KEY (`id`),
   ADD KEY `asztalId` (`asztalId`),
-  ADD KEY `pincerId` (`pincerId`);
+  ADD KEY `pincerId` (`pincerId`),
+  ADD KEY `fizetesiModId` (`fizetesiModId`);
 
 --
--- A tábla indexei `rendelestetel`
+-- Indexes for table `rendelestetel`
 --
 ALTER TABLE `rendelestetel`
   ADD KEY `tetelId` (`tetelId`),
   ADD KEY `rendelesId` (`rendelesId`);
 
 --
--- A tábla indexei `tetel`
+-- Indexes for table `tetel`
 --
 ALTER TABLE `tetel`
   ADD PRIMARY KEY (`id`);
 
 --
--- A kiírt táblák AUTO_INCREMENT értéke
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT a táblához `asztal`
+-- AUTO_INCREMENT for table `asztal`
 --
 ALTER TABLE `asztal`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT a táblához `pincer`
+-- AUTO_INCREMENT for table `fizetesimod`
+--
+ALTER TABLE `fizetesimod`
+  MODIFY `id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `pincer`
 --
 ALTER TABLE `pincer`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT a táblához `rendeles`
+-- AUTO_INCREMENT for table `rendeles`
 --
 ALTER TABLE `rendeles`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
--- AUTO_INCREMENT a táblához `tetel`
+-- AUTO_INCREMENT for table `tetel`
 --
 ALTER TABLE `tetel`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- Megkötések a kiírt táblákhoz
+-- Constraints for dumped tables
 --
 
 --
--- Megkötések a táblához `rendeles`
+-- Constraints for table `rendeles`
 --
 ALTER TABLE `rendeles`
   ADD CONSTRAINT `rendeles_ibfk_1` FOREIGN KEY (`pincerId`) REFERENCES `pincer` (`id`),
-  ADD CONSTRAINT `rendeles_ibfk_2` FOREIGN KEY (`asztalId`) REFERENCES `asztal` (`id`);
+  ADD CONSTRAINT `rendeles_ibfk_2` FOREIGN KEY (`asztalId`) REFERENCES `asztal` (`id`),
+  ADD CONSTRAINT `rendeles_ibfk_3` FOREIGN KEY (`fizetesiModId`) REFERENCES `fizetesimod` (`id`);
 
 --
--- Megkötések a táblához `rendelestetel`
+-- Constraints for table `rendelestetel`
 --
 ALTER TABLE `rendelestetel`
   ADD CONSTRAINT `rendelestetel_ibfk_1` FOREIGN KEY (`tetelId`) REFERENCES `tetel` (`id`),

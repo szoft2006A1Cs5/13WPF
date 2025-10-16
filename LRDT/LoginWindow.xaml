@@ -15,7 +15,8 @@
                 <RowDefinition />
             </Grid.RowDefinitions>
 
-            <TextBlock Text="Üdvözöljük" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30px" />
+            <!--<TextBlock Text="Üdvözöljük" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30px" />-->
+            <Image Source="/img/logo_lrdt.png" />
             <TextBlock Grid.Row="1" Text="Felhasználó" VerticalAlignment="Bottom" Margin="15px 0px" />
             <ComboBox x:Name="cbUser" Grid.Row="2" VerticalAlignment="Center" Margin="15px" SelectionChanged="cbUser_SelectionChanged" />
             <Button x:Name="btnLogin" Grid.Row="3" Content="Bejelentkezés" VerticalAlignment="Center" HorizontalAlignment="Center" Padding="20px" IsEnabled="False" Click="btnLogin_Click" />

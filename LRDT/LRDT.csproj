@@ -13,6 +13,7 @@
     <None Remove="img\gulyasleves.jpg" />
     <None Remove="img\kakao.jpg" />
     <None Remove="img\kovacs_adam.jpg" />
+    <None Remove="img\logo_lrdt.png" />
     <None Remove="img\nagy_petra.jpg" />
     <None Remove="img\palacsinta.jpg" />
     <None Remove="img\rantott_sajt.jpg" />
@@ -37,6 +38,7 @@
     <Resource Include="img\kovacs_adam.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="img\logo_lrdt.png" />
     <Resource Include="img\nagy_petra.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>

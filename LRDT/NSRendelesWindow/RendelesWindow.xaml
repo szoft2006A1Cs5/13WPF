@@ -27,10 +27,11 @@
         <TextBlock Grid.Row="1" Text="Aktív rendelések" Margin="5px 0px" />
         <ListBox x:Name="lbRendelesek" Grid.Row="2" Grid.ColumnSpan="2" Grid.RowSpan="5" Margin="5px" SelectionChanged="lbRendelesek_SelectionChanged" />
 
-        <Button x:Name="btnUjRendeles" Margin="5px" Grid.Row="0" Grid.Column="0" Content="Új rendelés" />
-        <Button x:Name="btnRendelesLezar" Margin="5px" Grid.Row="0" Grid.Column="1" Content="Rendelés lezárása" IsEnabled="False" />
+        <Button x:Name="btnUjRendeles" Margin="5px" Grid.Row="0" Grid.Column="0" Content="Új rendelés" Click="btnUjRendeles_Click" />
 
-        <Button x:Name="btnHozzaadTetel" Margin="5px" Grid.Row="0" Grid.Column="3" Content="Új tétel" />
+        <Button x:Name="btnRendelesLezar" Margin="5px" Grid.Row="0" Grid.Column="1" Content="Rendelés lezárása" IsEnabled="False" Click="btnRendelesLezar_Click" />
+
+        <Button x:Name="btnHozzaadTetel" Margin="5px" Grid.Row="0" Grid.Column="3" Content="Tétel hozzáadása" />
         <Button x:Name="btnEltavolitTetel" Margin="5px" Grid.Row="0" Grid.Column="4" Content="Tétel eltávolítása" IsEnabled="False" />
 
         <TextBlock Grid.Row="1" Grid.Column="3" Text="Rendelés tételei" Margin="5px 0px" />

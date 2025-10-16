@@ -3,39 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\arongeo\\Desktop\\13WPF\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|c:\\users\\arongeo\\desktop\\13wpf\\lrdt\\nsrendeleswindow\\rendeleswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|solutionrelative:lrdt\\nsrendeleswindow\\rendeleswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|c:\\users\\arongeo\\desktop\\13wpf\\lrdt\\nsrendeleswindow\\rendeleslistboxview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|solutionrelative:lrdt\\nsrendeleswindow\\rendeleslistboxview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|c:\\users\\arongeo\\desktop\\13wpf\\lrdt\\nsrendeleswindow\\rendeleswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|solutionrelative:lrdt\\nsrendeleswindow\\rendeleswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|c:\\users\\arongeo\\desktop\\13wpf\\lrdt\\models\\rendelestetel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|solutionrelative:lrdt\\models\\rendelestetel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|c:\\users\\arongeo\\desktop\\13wpf\\lrdt\\nsrendeleswindow\\rendeleswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|solutionrelative:lrdt\\nsrendeleswindow\\rendeleswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\arongeo\\AppData\\Local\\Temp\\.vsdbgsrc\\1b77cb146b3dc6f60ca3b7de619b68fc3904b4f03155b255fa425d7d7bd36ae9\\PropertyPathWorker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|c:\\users\\arongeo\\desktop\\13wpf\\lrdt\\rendeleslezaraswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|solutionrelative:lrdt\\rendeleslezaraswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|c:\\users\\arongeo\\desktop\\13wpf\\lrdt\\models\\asztal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|solutionrelative:lrdt\\models\\asztal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|c:\\users\\arongeo\\desktop\\13wpf\\lrdt\\models\\pincer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|solutionrelative:lrdt\\models\\pincer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|c:\\users\\arongeo\\desktop\\13wpf\\lrdt\\models\\rendeles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|solutionrelative:lrdt\\models\\rendeles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|c:\\users\\arongeo\\desktop\\13wpf\\lrdt\\models\\tetel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|solutionrelative:lrdt\\models\\tetel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|c:\\users\\arongeo\\desktop\\13wpf\\lrdt\\rendeleslezaraswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|solutionrelative:lrdt\\rendeleslezaraswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|c:\\users\\arongeo\\desktop\\13wpf\\lrdt\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -46,8 +27,55 @@
       "RelativeMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|solutionrelative:lrdt\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|c:\\users\\arongeo\\desktop\\13wpf\\lrdt\\nsrendeleswindow\\rendeleslistboxview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|solutionrelative:lrdt\\nsrendeleswindow\\rendeleslistboxview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|c:\\users\\arongeo\\desktop\\13wpf\\lrdt\\database\\lrdtcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|solutionrelative:lrdt\\database\\lrdtcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|c:\\users\\arongeo\\desktop\\13wpf\\lrdt\\models\\rendeles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|solutionrelative:lrdt\\models\\rendeles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|c:\\users\\arongeo\\desktop\\13wpf\\lrdt\\models\\pincer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|solutionrelative:lrdt\\models\\pincer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|c:\\users\\arongeo\\desktop\\13wpf\\lrdt\\models\\fizetesimod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|solutionrelative:lrdt\\models\\fizetesimod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|c:\\users\\arongeo\\desktop\\13wpf\\lrdt\\models\\rendelestetel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|solutionrelative:lrdt\\models\\rendelestetel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|c:\\users\\arongeo\\desktop\\13wpf\\lrdt\\ujrendeleswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|solutionrelative:lrdt\\ujrendeleswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|c:\\users\\arongeo\\desktop\\13wpf\\lrdt\\ujrendeleswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|solutionrelative:lrdt\\ujrendeleswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|c:\\users\\arongeo\\desktop\\13wpf\\lrdt\\lrdt.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|solutionrelative:lrdt\\lrdt.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|c:\\users\\arongeo\\desktop\\13wpf\\lrdt\\models\\asztal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|solutionrelative:lrdt\\models\\asztal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|c:\\users\\arongeo\\desktop\\13wpf\\lrdt\\img\\logo_lrdt.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|solutionrelative:lrdt\\img\\logo_lrdt.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\arongeo\\AppData\\Local\\Temp\\.vsdbgsrc\\1b77cb146b3dc6f60ca3b7de619b68fc3904b4f03155b255fa425d7d7bd36ae9\\PropertyPathWorker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|c:\\users\\arongeo\\desktop\\13wpf\\lrdt\\models\\tetel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{282A9BD5-2C44-4F2F-81BE-88A7AE7BCE1B}|LRDT\\LRDT.csproj|solutionrelative:lrdt\\models\\tetel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -57,23 +85,62 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Tetel.cs",
-              "DocumentMoniker": "C:\\Users\\arongeo\\Desktop\\13WPF\\LRDT\\Models\\Tetel.cs",
-              "RelativeDocumentMoniker": "LRDT\\Models\\Tetel.cs",
-              "ToolTip": "C:\\Users\\arongeo\\Desktop\\13WPF\\LRDT\\Models\\Tetel.cs",
-              "RelativeToolTip": "LRDT\\Models\\Tetel.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAQwCEAAAAtAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "RendelesListBoxView.cs",
+              "DocumentMoniker": "C:\\Users\\arongeo\\Desktop\\13WPF\\LRDT\\NSRendelesWindow\\RendelesListBoxView.cs",
+              "RelativeDocumentMoniker": "LRDT\\NSRendelesWindow\\RendelesListBoxView.cs",
+              "ToolTip": "C:\\Users\\arongeo\\Desktop\\13WPF\\LRDT\\NSRendelesWindow\\RendelesListBoxView.cs",
+              "RelativeToolTip": "LRDT\\NSRendelesWindow\\RendelesListBoxView.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAkwA8AAAC2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T10:55:02.967Z"
+              "WhenOpened": "2025-10-15T10:37:05.358Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
+              "Title": "LoginWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\arongeo\\Desktop\\13WPF\\LRDT\\LoginWindow.xaml",
+              "RelativeDocumentMoniker": "LRDT\\LoginWindow.xaml",
+              "ToolTip": "C:\\Users\\arongeo\\Desktop\\13WPF\\LRDT\\LoginWindow.xaml",
+              "RelativeToolTip": "LRDT\\LoginWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-15T09:45:02.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoginWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\arongeo\\Desktop\\13WPF\\LRDT\\LoginWindow.xaml.cs",
+              "RelativeDocumentMoniker": "LRDT\\LoginWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\arongeo\\Desktop\\13WPF\\LRDT\\LoginWindow.xaml.cs",
+              "RelativeToolTip": "LRDT\\LoginWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T10:29:25.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RendelesWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\arongeo\\Desktop\\13WPF\\LRDT\\NSRendelesWindow\\RendelesWindow.xaml.cs",
+              "RelativeDocumentMoniker": "LRDT\\NSRendelesWindow\\RendelesWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\arongeo\\Desktop\\13WPF\\LRDT\\NSRendelesWindow\\RendelesWindow.xaml.cs",
+              "RelativeToolTip": "LRDT\\NSRendelesWindow\\RendelesWindow.xaml.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAmwIQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T09:44:55.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "RendelesWindow.xaml",
               "DocumentMoniker": "C:\\Users\\arongeo\\Desktop\\13WPF\\LRDT\\NSRendelesWindow\\RendelesWindow.xaml",
               "RelativeDocumentMoniker": "LRDT\\NSRendelesWindow\\RendelesWindow.xaml",
@@ -85,33 +152,58 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RendelesWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\arongeo\\Desktop\\13WPF\\LRDT\\NSRendelesWindow\\RendelesWindow.xaml.cs",
-              "RelativeDocumentMoniker": "LRDT\\NSRendelesWindow\\RendelesWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\arongeo\\Desktop\\13WPF\\LRDT\\NSRendelesWindow\\RendelesWindow.xaml.cs",
-              "RelativeToolTip": "LRDT\\NSRendelesWindow\\RendelesWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "RendelesLezarasWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\arongeo\\Desktop\\13WPF\\LRDT\\RendelesLezarasWindow.xaml.cs",
+              "RelativeDocumentMoniker": "LRDT\\RendelesLezarasWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\arongeo\\Desktop\\13WPF\\LRDT\\RendelesLezarasWindow.xaml.cs",
+              "RelativeToolTip": "LRDT\\RendelesLezarasWindow.xaml.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAADgvy4AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T09:44:55.351Z",
+              "WhenOpened": "2025-10-16T20:01:26.39Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RendelesListBoxView.cs",
-              "DocumentMoniker": "C:\\Users\\arongeo\\Desktop\\13WPF\\LRDT\\NSRendelesWindow\\RendelesListBoxView.cs",
-              "RelativeDocumentMoniker": "LRDT\\NSRendelesWindow\\RendelesListBoxView.cs",
-              "ToolTip": "C:\\Users\\arongeo\\Desktop\\13WPF\\LRDT\\NSRendelesWindow\\RendelesListBoxView.cs",
-              "RelativeToolTip": "LRDT\\NSRendelesWindow\\RendelesListBoxView.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAkwA8AAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T10:37:05.358Z",
+              "DocumentIndex": 3,
+              "Title": "RendelesLezarasWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\arongeo\\Desktop\\13WPF\\LRDT\\RendelesLezarasWindow.xaml",
+              "RelativeDocumentMoniker": "LRDT\\RendelesLezarasWindow.xaml",
+              "ToolTip": "C:\\Users\\arongeo\\Desktop\\13WPF\\LRDT\\RendelesLezarasWindow.xaml",
+              "RelativeToolTip": "LRDT\\RendelesLezarasWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-16T19:58:19.135Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
+              "Title": "Rendeles.cs",
+              "DocumentMoniker": "C:\\Users\\arongeo\\Desktop\\13WPF\\LRDT\\Models\\Rendeles.cs",
+              "RelativeDocumentMoniker": "LRDT\\Models\\Rendeles.cs",
+              "ToolTip": "C:\\Users\\arongeo\\Desktop\\13WPF\\LRDT\\Models\\Rendeles.cs",
+              "RelativeToolTip": "LRDT\\Models\\Rendeles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T09:44:48.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LRDTContext.cs",
+              "DocumentMoniker": "C:\\Users\\arongeo\\Desktop\\13WPF\\LRDT\\Database\\LRDTContext.cs",
+              "RelativeDocumentMoniker": "LRDT\\Database\\LRDTContext.cs",
+              "ToolTip": "C:\\Users\\arongeo\\Desktop\\13WPF\\LRDT\\Database\\LRDTContext.cs",
+              "RelativeToolTip": "LRDT\\Database\\LRDTContext.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAA9wBAAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T20:27:43.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Pincer.cs",
               "DocumentMoniker": "C:\\Users\\arongeo\\Desktop\\13WPF\\LRDT\\Models\\Pincer.cs",
               "RelativeDocumentMoniker": "LRDT\\Models\\Pincer.cs",
@@ -119,23 +211,25 @@
               "RelativeToolTip": "LRDT\\Models\\Pincer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T10:58:51.948Z"
+              "WhenOpened": "2025-10-14T10:58:51.948Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Rendeles.cs",
-              "DocumentMoniker": "C:\\Users\\arongeo\\Desktop\\13WPF\\LRDT\\Models\\Rendeles.cs",
-              "RelativeDocumentMoniker": "LRDT\\Models\\Rendeles.cs",
-              "ToolTip": "C:\\Users\\arongeo\\Desktop\\13WPF\\LRDT\\Models\\Rendeles.cs",
-              "RelativeToolTip": "LRDT\\Models\\Rendeles.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "FizetesiMod.cs",
+              "DocumentMoniker": "C:\\Users\\arongeo\\Desktop\\13WPF\\LRDT\\Models\\FizetesiMod.cs",
+              "RelativeDocumentMoniker": "LRDT\\Models\\FizetesiMod.cs",
+              "ToolTip": "C:\\Users\\arongeo\\Desktop\\13WPF\\LRDT\\Models\\FizetesiMod.cs",
+              "RelativeToolTip": "LRDT\\Models\\FizetesiMod.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T09:44:48.369Z"
+              "WhenOpened": "2025-10-16T20:26:43.476Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 11,
               "Title": "RendelesTetel.cs",
               "DocumentMoniker": "C:\\Users\\arongeo\\Desktop\\13WPF\\LRDT\\Models\\RendelesTetel.cs",
               "RelativeDocumentMoniker": "LRDT\\Models\\RendelesTetel.cs",
@@ -148,7 +242,82 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 13,
+              "Title": "UjRendelesWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\arongeo\\Desktop\\13WPF\\LRDT\\UjRendelesWindow.xaml.cs",
+              "RelativeDocumentMoniker": "LRDT\\UjRendelesWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\arongeo\\Desktop\\13WPF\\LRDT\\UjRendelesWindow.xaml.cs",
+              "RelativeToolTip": "LRDT\\UjRendelesWindow.xaml.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAASwB0AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T17:27:27.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LRDT.csproj",
+              "DocumentMoniker": "C:\\Users\\arongeo\\Desktop\\13WPF\\LRDT\\LRDT.csproj",
+              "RelativeDocumentMoniker": "LRDT\\LRDT.csproj",
+              "ToolTip": "C:\\Users\\arongeo\\Desktop\\13WPF\\LRDT\\LRDT.csproj",
+              "RelativeToolTip": "LRDT\\LRDT.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-15T09:41:19.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Asztal.cs",
+              "DocumentMoniker": "C:\\Users\\arongeo\\Desktop\\13WPF\\LRDT\\Models\\Asztal.cs",
+              "RelativeDocumentMoniker": "LRDT\\Models\\Asztal.cs",
+              "ToolTip": "C:\\Users\\arongeo\\Desktop\\13WPF\\LRDT\\Models\\Asztal.cs",
+              "RelativeToolTip": "LRDT\\Models\\Asztal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T10:58:52.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UjRendelesWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\arongeo\\Desktop\\13WPF\\LRDT\\UjRendelesWindow.xaml",
+              "RelativeDocumentMoniker": "LRDT\\UjRendelesWindow.xaml",
+              "ToolTip": "C:\\Users\\arongeo\\Desktop\\13WPF\\LRDT\\UjRendelesWindow.xaml",
+              "RelativeToolTip": "LRDT\\UjRendelesWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-16T17:18:22.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "logo_lrdt.png - PNG [499x499, 32 bit, PNG]",
+              "DocumentMoniker": "C:\\Users\\arongeo\\Desktop\\13WPF\\LRDT\\img\\logo_lrdt.png",
+              "RelativeDocumentMoniker": "LRDT\\img\\logo_lrdt.png",
+              "ToolTip": "C:\\Users\\arongeo\\Desktop\\13WPF\\LRDT\\img\\logo_lrdt.png - PNG [499x499, 32 bit, PNG]",
+              "RelativeToolTip": "LRDT\\img\\logo_lrdt.png - PNG [499x499, 32 bit, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-10-16T17:15:32.468Z",
+              "EditorCaption": " - PNG [499x499, 32 bit, PNG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Tetel.cs",
+              "DocumentMoniker": "C:\\Users\\arongeo\\Desktop\\13WPF\\LRDT\\Models\\Tetel.cs",
+              "RelativeDocumentMoniker": "LRDT\\Models\\Tetel.cs",
+              "ToolTip": "C:\\Users\\arongeo\\Desktop\\13WPF\\LRDT\\Models\\Tetel.cs",
+              "RelativeToolTip": "LRDT\\Models\\Tetel.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAQwCEAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T10:55:02.967Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "PropertyPathWorker.cs",
               "DocumentMoniker": "C:\\Users\\arongeo\\AppData\\Local\\Temp\\.vsdbgsrc\\1b77cb146b3dc6f60ca3b7de619b68fc3904b4f03155b255fa425d7d7bd36ae9\\PropertyPathWorker.cs",
               "RelativeDocumentMoniker": "..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\1b77cb146b3dc6f60ca3b7de619b68fc3904b4f03155b255fa425d7d7bd36ae9\\PropertyPathWorker.cs",
@@ -158,53 +327,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-15T21:37:07.49Z",
               "EditorCaption": " [Read Only]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Asztal.cs",
-              "DocumentMoniker": "C:\\Users\\arongeo\\Desktop\\13WPF\\LRDT\\Models\\Asztal.cs",
-              "RelativeDocumentMoniker": "LRDT\\Models\\Asztal.cs",
-              "ToolTip": "C:\\Users\\arongeo\\Desktop\\13WPF\\LRDT\\Models\\Asztal.cs",
-              "RelativeToolTip": "LRDT\\Models\\Asztal.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T10:58:52.862Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "LRDT.csproj",
-              "DocumentMoniker": "C:\\Users\\arongeo\\Desktop\\13WPF\\LRDT\\LRDT.csproj",
-              "RelativeDocumentMoniker": "LRDT\\LRDT.csproj",
-              "ToolTip": "C:\\Users\\arongeo\\Desktop\\13WPF\\LRDT\\LRDT.csproj",
-              "RelativeToolTip": "LRDT\\LRDT.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-15T09:41:19.099Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "LoginWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\arongeo\\Desktop\\13WPF\\LRDT\\LoginWindow.xaml",
-              "RelativeDocumentMoniker": "LRDT\\LoginWindow.xaml",
-              "ToolTip": "C:\\Users\\arongeo\\Desktop\\13WPF\\LRDT\\LoginWindow.xaml",
-              "RelativeToolTip": "LRDT\\LoginWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-10-15T09:45:02.647Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "LoginWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\arongeo\\Desktop\\13WPF\\LRDT\\LoginWindow.xaml.cs",
-              "RelativeDocumentMoniker": "LRDT\\LoginWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\arongeo\\Desktop\\13WPF\\LRDT\\LoginWindow.xaml.cs",
-              "RelativeToolTip": "LRDT\\LoginWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T10:29:25.252Z"
             }
           ]
         }

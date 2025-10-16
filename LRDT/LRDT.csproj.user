@@ -5,5 +5,11 @@
     <Compile Update="NSRendelesWindow\RendelesWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="RendelesLezarasWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UjRendelesWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
