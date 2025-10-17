@@ -62,6 +62,9 @@ namespace LRDT
             if (lbRendelesek.SelectedItem == null) return;
 
             var selRend = (RendelesListBoxView)lbRendelesek.SelectedItem;
+
+            btnRendelesLezar.Content = selRend.Rendeles.RendelesTetels.Count() == 0 ? "Rendelés törlése" : "Rendelés lezárása";
+            
             dgRendelesTetelek.DataContext = selRend.Rendeles.RendelesTetels;
         }
 
@@ -84,6 +87,7 @@ namespace LRDT
             var selRend = (RendelesListBoxView)lbRendelesek.SelectedItem;
             dgRendelesTetelek.DataContext = null; // Valamiert igenyli ezt a null-zast
             dgRendelesTetelek.DataContext = selRend.Rendeles.RendelesTetels;
+            btnRendelesLezar.Content = selRend.Rendeles.RendelesTetels.Count() == 0 ? "Rendelés törlése" : "Rendelés lezárása";
 
             lbRendelesek.Items.Refresh();
         }
@@ -121,6 +125,17 @@ namespace LRDT
 
             var rlbv = (RendelesListBoxView)lbRendelesek.SelectedItem;
 
+            if (rlbv.Rendeles.RendelesTetels.Count() == 0)
+            {
+                lbRendelesek.SelectedItem = null;
+                lbRendelesek.Items.Remove(rlbv);
+                dgRendelesTetelek.DataContext = null;
+                Context.Rendeles.Remove(rlbv.Rendeles);
+                Context.SaveChanges();
+                btnRendelesLezar.Content = "Rendelés lezárása";
+                return;
+            }
+
             var rlw = new RendelesLezarasWindow(Context, rlbv.Rendeles);
             rlw.ShowDialog();
 
@@ -143,6 +158,8 @@ namespace LRDT
 
             dgRendelesTetelek.Items.Refresh();
             lbRendelesek.Items.Refresh();
+
+            btnRendelesLezar.Content = rlbv.Rendeles.RendelesTetels.Count() == 0 ? "Rendelés törlése" : "Rendelés lezárása";
         }
 
         private void btnEltavolitTetel_Click(object sender, RoutedEventArgs e)
@@ -152,11 +169,15 @@ namespace LRDT
             var rt = (RendelesTetel)dgRendelesTetelek.SelectedItem;
             dgRendelesTetelek.SelectedItem = null;
 
+            var rendeles = rt.Rendeles;
+
             Context.RendelesTetel.Remove(rt);
             Context.SaveChanges();
 
             dgRendelesTetelek.Items.Refresh();
             lbRendelesek.Items.Refresh();
+
+            btnRendelesLezar.Content = rendeles.RendelesTetels.Count() == 0 ? "Rendelés törlése" : "Rendelés lezárása";
         }
 
         private void dgRendelesTetelek_SelectionChanged(object sender, SelectionChangedEventArgs e)
