@@ -15,6 +15,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using ZstdSharp.Unsafe;
 
 namespace LRDT
 {
@@ -33,7 +34,7 @@ namespace LRDT
 
             InitializeComponent();
             
-            this.Title = $"{this.SelectedPincer.Nev} - LRDT";
+            this.Title = $"{this.SelectedPincer.Nev} - LRDT étteremkiszolgáló rendszer";
 
             foreach (var aktivRendeles in Context.Rendeles
                 .Include(x => x.Asztal)
@@ -46,7 +47,7 @@ namespace LRDT
                 )
             )
             {
-                lbRendelesek.Items.Add(new RendelesListBoxView
+                lbRendelesek.Items.Add(new RendelesListBoxItem
                     {
                         Rendeles = aktivRendeles
                     }
@@ -61,7 +62,7 @@ namespace LRDT
 
             if (lbRendelesek.SelectedItem == null) return;
 
-            var selRend = (RendelesListBoxView)lbRendelesek.SelectedItem;
+            var selRend = (RendelesListBoxItem)lbRendelesek.SelectedItem;
 
             btnRendelesLezar.Content = selRend.Rendeles.RendelesTetels.Count() == 0 ? "Rendelés törlése" : "Rendelés lezárása";
             
@@ -84,7 +85,7 @@ namespace LRDT
                 rt.Mennyiseg = mennyiseg;
 
             Context.SaveChanges();
-            var selRend = (RendelesListBoxView)lbRendelesek.SelectedItem;
+            var selRend = (RendelesListBoxItem)lbRendelesek.SelectedItem;
             dgRendelesTetelek.DataContext = null; // Valamiert igenyli ezt a null-zast
             dgRendelesTetelek.DataContext = selRend.Rendeles.RendelesTetels;
             btnRendelesLezar.Content = selRend.Rendeles.RendelesTetels.Count() == 0 ? "Rendelés törlése" : "Rendelés lezárása";
@@ -108,14 +109,14 @@ namespace LRDT
 
                 Context.SaveChanges();
 
-                var rendelesView = new RendelesListBoxView
+                var rendelesItem = new RendelesListBoxItem
                 {
                     Rendeles = rendeles.Entity,
                 };
 
-                lbRendelesek.Items.Add(rendelesView);
+                lbRendelesek.Items.Add(rendelesItem);
 
-                lbRendelesek.SelectedItem = rendelesView;
+                lbRendelesek.SelectedItem = rendelesItem;
             }
         }
 
@@ -123,27 +124,27 @@ namespace LRDT
         {
             if (lbRendelesek.SelectedItem == null) return;
 
-            var rlbv = (RendelesListBoxView)lbRendelesek.SelectedItem;
+            var rlbi = (RendelesListBoxItem)lbRendelesek.SelectedItem;
 
-            if (rlbv.Rendeles.RendelesTetels.Count() == 0)
+            if (rlbi.Rendeles.RendelesTetels.Count() == 0)
             {
                 lbRendelesek.SelectedItem = null;
-                lbRendelesek.Items.Remove(rlbv);
+                lbRendelesek.Items.Remove(rlbi);
                 dgRendelesTetelek.DataContext = null;
-                Context.Rendeles.Remove(rlbv.Rendeles);
+                Context.Rendeles.Remove(rlbi.Rendeles);
                 Context.SaveChanges();
                 btnRendelesLezar.Content = "Rendelés lezárása";
                 return;
             }
 
-            var rlw = new RendelesLezarasWindow(Context, rlbv.Rendeles);
+            var rlw = new RendelesLezarasWindow(Context, rlbi.Rendeles);
             rlw.ShowDialog();
 
             if (rlw.Rendeles.FizetesiMod != null)
             {
                 Context.SaveChanges();
                 lbRendelesek.SelectedItem = null;
-                lbRendelesek.Items.Remove(rlbv);
+                lbRendelesek.Items.Remove(rlbi);
                 dgRendelesTetelek.DataContext = null;
             }
         }
@@ -152,14 +153,14 @@ namespace LRDT
         {
             if (lbRendelesek.SelectedItem == null) return;
 
-            var rlbv = (RendelesListBoxView)lbRendelesek.SelectedItem;
-            var thw = new TetelHozzaadWindow(Context, rlbv.Rendeles);
+            var rlbi = (RendelesListBoxItem)lbRendelesek.SelectedItem;
+            var thw = new TetelHozzaadWindow(Context, rlbi.Rendeles);
             thw.ShowDialog();
 
             dgRendelesTetelek.Items.Refresh();
             lbRendelesek.Items.Refresh();
 
-            btnRendelesLezar.Content = rlbv.Rendeles.RendelesTetels.Count() == 0 ? "Rendelés törlése" : "Rendelés lezárása";
+            btnRendelesLezar.Content = rlbi.Rendeles.RendelesTetels.Count() == 0 ? "Rendelés törlése" : "Rendelés lezárása";
         }
 
         private void btnEltavolitTetel_Click(object sender, RoutedEventArgs e)
@@ -183,6 +184,12 @@ namespace LRDT
         private void dgRendelesTetelek_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             btnEltavolitTetel.IsEnabled = dgRendelesTetelek.SelectedItem != null;
+        }
+
+        private void btnLezartRendelesek_Click(object sender, RoutedEventArgs e)
+        {
+            var lrw = new LezartRendelesWindow(Context);
+            lrw.ShowDialog();
         }
     }
 }

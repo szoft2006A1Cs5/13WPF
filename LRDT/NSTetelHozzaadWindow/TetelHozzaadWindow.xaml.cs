@@ -45,7 +45,7 @@ namespace LRDT
                                 x.Nev!.Contains(tbKereses.Text) &&
                                 (chbGyerek.IsChecked == true ? (x.GyerekFelnott == true) : true)))
             {
-                lbElerhetoTetelek.Items.Add(new TetelListBoxView
+                lbElerhetoTetelek.Items.Add(new TetelListBoxItem
                 {
                     Tetel = tetel,
                 });
@@ -67,8 +67,8 @@ namespace LRDT
 
             if (lbElerhetoTetelek.SelectedItem == null) return;
 
-            var tlbv = (TetelListBoxView)lbElerhetoTetelek.SelectedItem;
-            TBTeljesar.Text = $"{tlbv.Tetel.Ar * mennyiseg} Ft";
+            var tlbi = (TetelListBoxItem)lbElerhetoTetelek.SelectedItem;
+            TBTeljesar.Text = $"{tlbi.Tetel.Ar * mennyiseg} Ft";
             btnHozzaad.IsEnabled = true;
         }
 
@@ -91,14 +91,14 @@ namespace LRDT
 
             if (lbElerhetoTetelek.SelectedItem == null) return;
 
-            var tlbv = (TetelListBoxView)lbElerhetoTetelek.SelectedItem;
+            var tlbi = (TetelListBoxItem)lbElerhetoTetelek.SelectedItem;
 
-            TBEgysegar.Text = $"{tlbv.Tetel.Ar} Ft";
-            TBAllergenek.Text = tlbv.Tetel.Allergen;
+            TBEgysegar.Text = $"{tlbi.Tetel.Ar} Ft";
+            TBAllergenek.Text = tlbi.Tetel.Allergen;
 
             tbMennyiseg_TextChanged(null, null);
             
-            imgEtel.Source = tlbv.Tetel.KepAdat;
+            imgEtel.Source = tlbi.Tetel.KepAdat;
         }
 
         private void btnVissza_Click(object sender, RoutedEventArgs e)
@@ -118,11 +118,11 @@ namespace LRDT
 
             if (mennyiseg <= 0) return;
 
-            var tlbv = (TetelListBoxView)lbElerhetoTetelek.SelectedItem;
+            var tlbi = (TetelListBoxItem)lbElerhetoTetelek.SelectedItem;
 
             Context.RendelesTetel.Add(new RendelesTetel
             {
-                Tetel = tlbv.Tetel,
+                Tetel = tlbi.Tetel,
                 Mennyiseg = mennyiseg,
                 Rendeles = Rendeles,
             });

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace LRDT.NSTetelHozzaadWindow
 {
-    class TetelListBoxView
+    class TetelListBoxItem
     {
         public Tetel Tetel { get; set; }
 

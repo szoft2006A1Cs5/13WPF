@@ -1,0 +1,89 @@
+﻿<Window x:Class="LRDT.LezartRendelesWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LRDT"
+        mc:Ignorable="d"
+        Title="Lezárt rendelések - LRDT" Height="450" Width="600">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.3*" />
+                <RowDefinition Height="0.5*" />
+                <RowDefinition Height="0.3*" />
+                <RowDefinition Height="5*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <TextBlock x:Name="TBAsztalszam" Text="Asztalszám" Grid.Row="0" Grid.Column="0" VerticalAlignment="Bottom" Margin="5px 0px" />
+            <TextBlock Text="Rendelés dátuma" Grid.Row="0" Grid.Column="1" VerticalAlignment="Bottom" Margin="5px 0px" />
+
+            <TextBox x:Name="tbAsztalszam" Grid.Row="1" Grid.Column="0" Margin="5px" TextChanged="tbAsztalszam_TextChanged" />
+            <DatePicker x:Name="dpRendelesDatum" Grid.Row="1" Grid.Column="1" Margin="5px" SelectedDateChanged="dpRendelesDatum_SelectedDateChanged" />
+
+            <TextBlock Text="Lezárt Rendelések" Grid.Row="2" VerticalAlignment="Bottom" Margin="5px 0px" />
+            <ListBox x:Name="lbLezartRendelesek" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Margin="5px" SelectionChanged="lbLezartRendelesek_SelectionChanged" />
+        </Grid>
+
+        <Grid Grid.Row="0" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Margin="5px 0px" Text="Dátum:" />
+                <TextBlock Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" Margin="5px 0px" Text="Felszolgáló:" />
+                <TextBlock Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" Margin="5px 0px" Text="Fizetési Mód:" />
+                <TextBlock Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Margin="5px 0px" Text="Asztal:" />
+                <TextBlock Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" Margin="5px 0px" Text="Végösszeg:" />
+
+                <TextBlock x:Name="TBDatum" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="5px 0px" />
+                <TextBlock x:Name="TBFelszolgalo" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="5px 0px" />
+                <TextBlock x:Name="TBAsztal" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="5px 0px" />
+                <TextBlock x:Name="TBFizMod" Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="5px 0px" />
+                <TextBlock x:Name="TBVegosszeg" Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="5px 0px" />
+            </Grid>
+
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition Height="9*" />
+                </Grid.RowDefinitions>
+
+                <TextBlock Text="Tételek" Grid.Row="0" VerticalAlignment="Bottom" Margin="5px 0px" />
+                <DataGrid x:Name="dgRendelesTetelek" CanUserDeleteRows="False" CanUserAddRows="False" ItemsSource="{Binding}" AutoGenerateColumns="False" Grid.Row="1" Margin="5px">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn IsReadOnly="True" Header="Tétel" Binding="{Binding Tetel.Nev}" />
+                        <DataGridTextColumn IsReadOnly="True" Header="Mennyiség" Binding="{Binding Mennyiseg}" />
+                        <DataGridTextColumn IsReadOnly="True" Header="Egységár" Binding="{Binding Tetel.Ar}" />
+                        <DataGridTextColumn IsReadOnly="True" Header="Ár" Binding="{Binding OsszAr}" />
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

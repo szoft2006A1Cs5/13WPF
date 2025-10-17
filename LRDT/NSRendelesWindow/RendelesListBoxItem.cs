@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace LRDT.NSRendelesWindow
 {
-    public class RendelesListBoxView
+    public class RendelesListBoxItem
     {
         public Rendeles Rendeles { get; set; }
 
