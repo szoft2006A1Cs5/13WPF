@@ -26,7 +26,7 @@ namespace LRDT.Models
             set
             {
                 kepSrc = value;
-                this.KepAdat = new BitmapImage(new Uri(kepSrc, UriKind.Relative));
+                this.KepAdat = new BitmapImage(new Uri(kepSrc, UriKind.RelativeOrAbsolute));
             }
         }
     }

@@ -30,11 +30,11 @@
         <Button x:Name="btnUjRendeles" Margin="5px" Grid.Row="0" Grid.Column="0" Content="Új rendelés" Click="btnUjRendeles_Click" />
         <Button x:Name="btnRendelesLezar" Margin="5px" Grid.Row="0" Grid.Column="1" Content="Rendelés lezárása" IsEnabled="False" Click="btnRendelesLezar_Click" />
 
-        <Button x:Name="btnHozzaadTetel" Margin="5px" Grid.Row="0" Grid.Column="3" Content="Tétel hozzáadása" />
-        <Button x:Name="btnEltavolitTetel" Margin="5px" Grid.Row="0" Grid.Column="4" Content="Tétel eltávolítása" IsEnabled="False" />
+        <Button x:Name="btnHozzaadTetel" IsEnabled="False" Margin="5px" Grid.Row="0" Grid.Column="3" Content="Tétel(ek) hozzáadása" Click="btnHozzaadTetel_Click" />
+        <Button x:Name="btnEltavolitTetel" Margin="5px" Grid.Row="0" Grid.Column="4" Content="Tétel(ek) eltávolítása" IsEnabled="False" Click="btnEltavolitTetel_Click" />
 
         <TextBlock Grid.Row="1" Grid.Column="3" Text="Rendelés tételei" Margin="5px 0px" />
-        <DataGrid x:Name="dgOrderItems" CanUserSortColumns="False" CanUserDeleteRows="False" CanUserAddRows="False" CellEditEnding="dgOrderItems_CellEditEnding" ItemsSource="{Binding}" AutoGenerateColumns="False" Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="2" Grid.RowSpan="4" Margin="5px">
+        <DataGrid x:Name="dgRendelesTetelek" SelectionMode="Single" SelectionUnit="FullRow" CanUserSortColumns="False" CanUserDeleteRows="False" CanUserAddRows="False" SelectionChanged="dgRendelesTetelek_SelectionChanged" CellEditEnding="dgRendelesTetelek_CellEditEnding" ItemsSource="{Binding}" AutoGenerateColumns="False" Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="2" Grid.RowSpan="4" Margin="5px">
             <DataGrid.Columns>
                 <DataGridTextColumn IsReadOnly="True" Header="Tétel" Binding="{Binding Tetel.Nev}" />
                 <DataGridTextColumn Header="Mennyiség" Binding="{Binding Mennyiseg}" />

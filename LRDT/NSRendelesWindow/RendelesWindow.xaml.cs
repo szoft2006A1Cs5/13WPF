@@ -57,18 +57,19 @@ namespace LRDT
         private void lbRendelesek_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             btnRendelesLezar.IsEnabled = lbRendelesek.SelectedItem != null;
+            btnHozzaadTetel.IsEnabled = lbRendelesek.SelectedItem != null;
 
             if (lbRendelesek.SelectedItem == null) return;
 
             var selRend = (RendelesListBoxView)lbRendelesek.SelectedItem;
-            dgOrderItems.DataContext = selRend.Rendeles.RendelesTetels;
+            dgRendelesTetelek.DataContext = selRend.Rendeles.RendelesTetels;
         }
 
-        private void dgOrderItems_CellEditEnding(object sender, DataGridCellEditEndingEventArgs e)
+        private void dgRendelesTetelek_CellEditEnding(object sender, DataGridCellEditEndingEventArgs e)
         {
-            if (dgOrderItems.SelectedItem == null) return;
+            if (dgRendelesTetelek.SelectedItem == null) return;
 
-            var rt = ((RendelesTetel)dgOrderItems.SelectedItem);
+            var rt = ((RendelesTetel)dgRendelesTetelek.SelectedItem);
             var mennyiseg = 0;
 
             if (!int.TryParse(((TextBox)(e.EditingElement)).Text, out mennyiseg))
@@ -81,8 +82,8 @@ namespace LRDT
 
             Context.SaveChanges();
             var selRend = (RendelesListBoxView)lbRendelesek.SelectedItem;
-            dgOrderItems.DataContext = null; // Valamiert igenyli ezt a null-zast
-            dgOrderItems.DataContext = selRend.Rendeles.RendelesTetels;
+            dgRendelesTetelek.DataContext = null; // Valamiert igenyli ezt a null-zast
+            dgRendelesTetelek.DataContext = selRend.Rendeles.RendelesTetels;
 
             lbRendelesek.Items.Refresh();
         }
@@ -128,8 +129,39 @@ namespace LRDT
                 Context.SaveChanges();
                 lbRendelesek.SelectedItem = null;
                 lbRendelesek.Items.Remove(rlbv);
-                dgOrderItems.DataContext = null;
+                dgRendelesTetelek.DataContext = null;
             }
+        }
+
+        private void btnHozzaadTetel_Click(object sender, RoutedEventArgs e)
+        {
+            if (lbRendelesek.SelectedItem == null) return;
+
+            var rlbv = (RendelesListBoxView)lbRendelesek.SelectedItem;
+            var thw = new TetelHozzaadWindow(Context, rlbv.Rendeles);
+            thw.ShowDialog();
+
+            dgRendelesTetelek.Items.Refresh();
+            lbRendelesek.Items.Refresh();
+        }
+
+        private void btnEltavolitTetel_Click(object sender, RoutedEventArgs e)
+        {
+            if (dgRendelesTetelek.SelectedItem == null) return;
+
+            var rt = (RendelesTetel)dgRendelesTetelek.SelectedItem;
+            dgRendelesTetelek.SelectedItem = null;
+
+            Context.RendelesTetel.Remove(rt);
+            Context.SaveChanges();
+
+            dgRendelesTetelek.Items.Refresh();
+            lbRendelesek.Items.Refresh();
+        }
+
+        private void dgRendelesTetelek_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            btnEltavolitTetel.IsEnabled = dgRendelesTetelek.SelectedItem != null;
         }
     }
 }

@@ -8,7 +8,7 @@
     <Compile Update="RendelesLezarasWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="TetelHozzaadWindow.xaml.cs">
+    <Compile Update="NSTetelHozzaadWindow\TetelHozzaadWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="UjRendelesWindow.xaml.cs">
