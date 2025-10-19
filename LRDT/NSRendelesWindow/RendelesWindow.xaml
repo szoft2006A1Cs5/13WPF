@@ -24,6 +24,16 @@
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
 
+        <Grid Grid.Row="0" Grid.Column="2" Grid.RowSpan="3">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition Height="3*" />
+            </Grid.RowDefinitions>
+
+            <TextBlock x:Name="TBPincer" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" />
+            <Image x:Name="imgPincer" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" />
+        </Grid>
+        
         <TextBlock Grid.Row="1" Text="Aktív rendelések" Margin="5px 0px" />
         <ListBox x:Name="lbRendelesek" Grid.Row="2" Grid.ColumnSpan="2" Grid.RowSpan="5" Margin="5px" SelectionChanged="lbRendelesek_SelectionChanged" />
 
@@ -44,6 +54,10 @@
         </DataGrid>
 
         <Image Grid.Row="3" Grid.Column="2" Source="/img/logo_lrdt.png" />
+
+        <Button x:Name="btnTetelModositas" Grid.Row="4" Grid.Column="2" Margin="5px" Click="btnTetelModositas_Click">
+            <TextBlock TextWrapping="Wrap" TextAlignment="Center">Tételek módosítása</TextBlock>
+        </Button>
 
         <Button x:Name="btnLezartRendelesek" Grid.Row="5" Grid.Column="2" Margin="5px" Click="btnLezartRendelesek_Click">
             <TextBlock TextWrapping="Wrap" TextAlignment="Center">Lezárt rendelések megtekintése</TextBlock>

@@ -30,7 +30,7 @@ namespace LRDT.Models
             } 
         }
 
-        public bool GyerekFelnott { get; set; }
+        public bool GyerekMenu { get; set; }
         public string? Allergen { get; set; }
 
     }

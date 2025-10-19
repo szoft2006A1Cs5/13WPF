@@ -11,7 +11,10 @@
     <Compile Update="RendelesLezarasWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="NSTetelHozzaadWindow\TetelHozzaadWindow.xaml.cs">
+    <Compile Update="NSTetelWindow\TetelHozzaadWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="NSTetelWindow\TetelModositasWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="UjRendelesWindow.xaml.cs">

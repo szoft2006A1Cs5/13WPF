@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3307
--- Generation Time: Oct 16, 2025 at 10:49 PM
+-- Generation Time: Oct 19, 2025 at 08:42 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -81,9 +81,9 @@ CREATE TABLE `pincer` (
 --
 
 INSERT INTO `pincer` (`id`, `nev`, `kep`) VALUES
-(1, 'Kovács Ádám', './img/kovacs_adam.jpg'),
-(2, 'Nagy Petra', './img/nagy_petra.jpg'),
-(3, 'Tóth Gábor', './img/toth_gabor.jpg');
+(1, 'Kovács Ádám', '/img/kovacs_adam.jpg'),
+(2, 'Nagy Petra', '/img/nagy_petra.jpg'),
+(3, 'Tóth Gábor', '/img/toth_gabor.jpg');
 
 -- --------------------------------------------------------
 
@@ -106,7 +106,11 @@ CREATE TABLE `rendeles` (
 INSERT INTO `rendeles` (`id`, `datum`, `fizetesiModId`, `asztalId`, `pincerId`) VALUES
 (1, '2025-10-12', 1, 1, 1),
 (2, '2025-10-13', 2, 2, 2),
-(3, '2025-10-13', NULL, 3, 3);
+(3, '2025-10-13', 2, 3, 3),
+(12, '2025-10-19', NULL, 2, 3),
+(13, '2025-10-19', NULL, 3, 1),
+(14, '2025-10-19', NULL, 4, 2),
+(15, '2025-10-19', 1, 1, 2);
 
 -- --------------------------------------------------------
 
@@ -130,7 +134,19 @@ INSERT INTO `rendelestetel` (`tetelId`, `rendelesId`, `mennyiseg`) VALUES
 (2, 2, 1),
 (4, 2, 1),
 (5, 2, 2),
-(3, 3, 3);
+(3, 3, 3),
+(6, 3, 2),
+(1, 12, 2),
+(2, 12, 1),
+(4, 12, 1),
+(4, 13, 3),
+(5, 13, 3),
+(3, 13, 1),
+(6, 13, 1),
+(4, 14, 2),
+(5, 14, 2),
+(2, 15, 2),
+(1, 15, 2);
 
 -- --------------------------------------------------------
 
@@ -144,7 +160,7 @@ CREATE TABLE `tetel` (
   `ar` int(11) NOT NULL,
   `elerheto` tinyint(1) NOT NULL,
   `kep` varchar(64) NOT NULL,
-  `gyerekFelnott` tinyint(1) NOT NULL,
+  `gyerekMenu` tinyint(1) NOT NULL,
   `allergen` varchar(64) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_hungarian_ci;
 
@@ -152,13 +168,13 @@ CREATE TABLE `tetel` (
 -- Dumping data for table `tetel`
 --
 
-INSERT INTO `tetel` (`id`, `nev`, `ar`, `elerheto`, `kep`, `gyerekFelnott`, `allergen`) VALUES
-(1, 'Gulyásleves', 1800, 1, 'img/gulyasleves.jpg', 0, 'glutén'),
-(2, 'Rántott sajt', 1600, 1, 'img/rantott_sajt.jpg', 0, 'tej, glutén'),
-(3, 'Palacsinta', 900, 1, 'img/palacsinta.jpg', 0, 'tojás, tej, glutén'),
-(4, 'Csirkemell rizssel', 2000, 1, 'img/csirkemell.jpg', 0, ''),
-(5, 'Ásványvíz', 400, 1, 'img/viz.jpg', 0, ''),
-(6, 'Kakaó', 500, 0, 'img/kakao.jpg', 1, 'tej');
+INSERT INTO `tetel` (`id`, `nev`, `ar`, `elerheto`, `kep`, `gyerekMenu`, `allergen`) VALUES
+(1, 'Gulyásleves', 1800, 1, '/img/gulyasleves.jpg', 0, 'glutén'),
+(2, 'Rántott sajt', 1600, 1, '/img/rantott_sajt.jpg', 0, 'tej, glutén'),
+(3, 'Palacsinta', 900, 1, '/img/palacsinta.jpg', 1, 'tojás, tej, glutén'),
+(4, 'Csirkemell rizssel', 2000, 1, '/img/csirkemell.jpg', 0, ''),
+(5, 'Ásványvíz', 400, 1, '/img/viz.jpg', 0, ''),
+(6, 'Kakaó', 500, 1, '/img/kakao.jpg', 1, 'tej');
 
 --
 -- Indexes for dumped tables
@@ -230,7 +246,7 @@ ALTER TABLE `pincer`
 -- AUTO_INCREMENT for table `rendeles`
 --
 ALTER TABLE `rendeles`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `tetel`

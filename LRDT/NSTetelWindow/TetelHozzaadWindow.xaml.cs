@@ -1,6 +1,6 @@
 ﻿using LRDT.Database;
 using LRDT.Models;
-using LRDT.NSTetelHozzaadWindow;
+using LRDT.NSTetelWindow;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -43,7 +43,7 @@ namespace LRDT
             foreach (var tetel in Context.Tetel.Where(x => !Rendeles.RendelesTetels.Select(y => y.Tetel).Contains(x) &&
                                 x.Elerheto == true &&
                                 x.Nev!.Contains(tbKereses.Text) &&
-                                (chbGyerek.IsChecked == true ? (x.GyerekFelnott == true) : true)))
+                                (chbGyerek.IsChecked == true ? (x.GyerekMenu == true) : true)))
             {
                 lbElerhetoTetelek.Items.Add(new TetelListBoxItem
                 {

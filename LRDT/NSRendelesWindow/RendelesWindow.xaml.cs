@@ -35,6 +35,8 @@ namespace LRDT
             InitializeComponent();
             
             this.Title = $"{this.SelectedPincer.Nev} - LRDT étteremkiszolgáló rendszer";
+            TBPincer.Text = $"Szia {this.SelectedPincer.Nev}!";
+            imgPincer.Source = this.SelectedPincer.KepAdat;
 
             foreach (var aktivRendeles in Context.Rendeles
                 .Include(x => x.Asztal)
@@ -190,6 +192,12 @@ namespace LRDT
         {
             var lrw = new LezartRendelesWindow(Context);
             lrw.ShowDialog();
+        }
+
+        private void btnTetelModositas_Click(object sender, RoutedEventArgs e)
+        {
+            var tmw = new TetelModositasWindow(Context);
+            tmw.ShowDialog();
         }
     }
 }

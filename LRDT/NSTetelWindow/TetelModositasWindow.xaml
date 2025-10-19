@@ -1,0 +1,88 @@
+﻿<Window x:Class="LRDT.TetelModositasWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LRDT"
+        mc:Ignorable="d"
+        Title="Tételek módosítása - LRDT" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition Height="4*" />
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition Height="1.5*" />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1.8*" />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Text="Keresés" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Margin="5px 0px" />
+                <TextBox x:Name="tbKereses" Grid.Row="1" Grid.Column="0" Margin="5px" TextChanged="tbKereses_TextChanged" />
+                <CheckBox x:Name="chbKeresesGyerek" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Csak gyerek menü" Checked="chbKeresesGyerek_Changed" Unchecked="chbKeresesGyerek_Changed" />
+
+                <TextBlock Text="Tételek" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Margin="5px 0px" />
+            </Grid>
+
+            <ListBox x:Name="lbTetelek" Grid.Row="1" Margin="5px" SelectionChanged="lbTetelek_SelectionChanged" />
+        </Grid>
+
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition Width="2*" />
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Text="Név:" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Margin="10px 0px" FontSize="20px" />
+            <TextBlock Text="Ár:" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" Margin="10px 0px" FontSize="20px" />
+            <TextBlock Text="Allergének: " Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Margin="10px 0px" FontSize="20px" />
+
+            <TextBox x:Name="tbNev" IsEnabled="False" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" FontSize="20px" Margin="0px 0px 10px 0px" />
+
+            <Grid Grid.Row="1" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*" />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <TextBox x:Name="tbAr" IsEnabled="False" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" FontSize="20px" TextAlignment="Right" />
+                <TextBlock Grid.Row="0" Grid.Column="1" Text="Ft" VerticalAlignment="Center" HorizontalAlignment="Center" />
+            </Grid>
+
+            <TextBox x:Name="tbAllergenek" IsEnabled="False" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" FontSize="20px" Margin="0px 0px 10px 0px" />
+            
+            <Grid Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <CheckBox x:Name="chbElerheto" IsEnabled="False" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Elérhető" FontSize="20px" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+                <CheckBox x:Name="chbGyerek" IsEnabled="False" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Gyerek menü" FontSize="20px" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+            </Grid>
+            
+            <Button x:Name="btnSave" IsEnabled="False" Content="Mentés" Grid.Row="4" Grid.ColumnSpan="2" Margin="5px" FontSize="20px" Click="btnSave_Click" />
+        </Grid>
+    </Grid>
+</Window>
