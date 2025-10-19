@@ -1,5 +1,6 @@
 ﻿using LRDT.Database;
 using LRDT.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,7 +32,10 @@ namespace LRDT
 
             InitializeComponent();
 
-            var hasznaltAsztal = Context.Rendeles.Where(x => x.FizetesiMod == null).Select(x => x.AsztalId).ToList();
+            var hasznaltAsztal = Context.Rendeles
+                .Include(x => x.FizetesiMod)
+                .Where(x => x.FizetesiMod == null)
+                .Select(x => x.AsztalId).ToList();
 
             foreach (var a in Context.Asztal.Where(x => !hasznaltAsztal.Contains(x.Id)))
             {

@@ -18,13 +18,13 @@ namespace LRDT
     /// </summary>
     public partial class LoginWindow : Window
     {
-        private LRDTContext ctx = new LRDTContext();
+        private LRDTContext Context { get; set; } = new LRDTContext();
 
         public LoginWindow()
         {
             InitializeComponent();
 
-            foreach (var pincer in ctx.Pincer)
+            foreach (var pincer in Context.Pincer)
             {
                 var cbItem = new ComboBoxItem();
                 cbItem.Tag = pincer.Id.ToString();
@@ -46,11 +46,11 @@ namespace LRDT
             if (cbUser.SelectedItem == null) return;
 
             int pincerId = int.Parse((string)((ComboBoxItem)(cbUser.SelectedItem)).Tag);
-            var pincer = ctx.Pincer.Where(x => x.Id == pincerId).FirstOrDefault();
+            var pincer = Context.Pincer.Where(x => x.Id == pincerId).FirstOrDefault();
 
             if (pincer != null)
             {
-                var rendelesWindow = new RendelesWindow(ctx, pincer);
+                var rendelesWindow = new RendelesWindow(Context, pincer);
                 rendelesWindow.Show();
                 this.Close();
             }

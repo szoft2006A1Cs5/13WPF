@@ -1,0 +1,38 @@
+﻿<Window x:Class="LRDT.StatisztikaWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LRDT"
+        mc:Ignorable="d"
+        Title="Statisztikák - LRDT" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.5*" />
+            <RowDefinition />
+            <RowDefinition Height="0.5*" />
+            <RowDefinition />
+            <RowDefinition Height="0.5*" />
+            <RowDefinition />
+            <RowDefinition Height="0.5*" />
+            <RowDefinition />
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Legtöbb rendeléssel rendelkező felszolgáló(k)" VerticalAlignment="Bottom" Margin="15px 0px" Grid.Row="0" />
+        <TextBlock x:Name="TBLegtRendFelsz" VerticalAlignment="Top" Margin="15px 0px" Grid.Row="1" FontSize="25px" />
+
+        <TextBlock Text="Legtöbb rendeléssel rendelkező asztal(ok)" VerticalAlignment="Bottom" Margin="15px 0px" Grid.Row="2" />
+        <TextBlock x:Name="TBLegtRendAsztal" VerticalAlignment="Top" Margin="15px 0px" Grid.Row="3" FontSize="25px" />
+
+        <TextBlock Text="Legtöbbet rendelt tétel(ek)" VerticalAlignment="Bottom" Margin="15px 0px" Grid.Row="4" />
+        <TextBlock x:Name="TBLegtRendTetel" VerticalAlignment="Top" Margin="15px 0px" Grid.Row="5" FontSize="25px" />
+
+        <TextBlock Text="Rendelésenkénti átlag költés" VerticalAlignment="Bottom" Margin="15px 0px" Grid.Row="6" />
+        <TextBlock x:Name="TBAtlagKoltes" VerticalAlignment="Top" Margin="15px 0px" Grid.Row="7" FontSize="25px" />
+
+        <TextBlock Text="Átlag vendégszám (asztalok férőhelyeivel számolva)" VerticalAlignment="Bottom" Margin="15px 0px" Grid.Row="8" />
+        <TextBlock x:Name="TBAtlagVendeg" VerticalAlignment="Top" Margin="15px 0px" Grid.Row="9" FontSize="25px" />
+    </Grid>
+</Window>

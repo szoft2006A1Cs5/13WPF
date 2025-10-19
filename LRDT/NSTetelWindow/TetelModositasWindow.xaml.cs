@@ -104,13 +104,13 @@ namespace LRDT
             chbGyerek.IsEnabled = vanTetel;
             btnSave.IsEnabled = vanTetel;
 
-            var tlbi = (TetelListBoxItem)lbTetelek.SelectedItem;
+            var tlbi = (TetelListBoxItem)lbTetelek.SelectedItem!;
 
-            tbNev.Text = vanTetel ? tlbi!.Tetel.Nev : "";
-            tbAr.Text = vanTetel ? $"{tlbi!.Tetel.Ar}" : "";
-            tbAllergenek.Text = vanTetel ? tlbi!.Tetel.Allergen : "";
-            chbElerheto.IsChecked = vanTetel ? tlbi!.Tetel.Elerheto : false;
-            chbGyerek.IsChecked = vanTetel ? tlbi!.Tetel.GyerekMenu : false;
+            tbNev.Text = vanTetel ? tlbi.Tetel.Nev : "";
+            tbAr.Text = vanTetel ? $"{tlbi.Tetel.Ar}" : "";
+            tbAllergenek.Text = vanTetel ? tlbi.Tetel.Allergen : "";
+            chbElerheto.IsChecked = vanTetel ? tlbi.Tetel.Elerheto : false;
+            chbGyerek.IsChecked = vanTetel ? tlbi.Tetel.GyerekMenu : false;
         }
     }
 }

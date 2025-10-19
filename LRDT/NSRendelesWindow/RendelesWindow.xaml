@@ -55,12 +55,26 @@
 
         <Image Grid.Row="3" Grid.Column="2" Source="/img/logo_lrdt.png" />
 
-        <Button x:Name="btnTetelModositas" Grid.Row="4" Grid.Column="2" Margin="5px" Click="btnTetelModositas_Click">
-            <TextBlock TextWrapping="Wrap" TextAlignment="Center">Tételek módosítása</TextBlock>
-        </Button>
+        <Grid Grid.Row="4" Grid.Column="2" Grid.RowSpan="2" >
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
 
-        <Button x:Name="btnLezartRendelesek" Grid.Row="5" Grid.Column="2" Margin="5px" Click="btnLezartRendelesek_Click">
-            <TextBlock TextWrapping="Wrap" TextAlignment="Center">Lezárt rendelések megtekintése</TextBlock>
-        </Button>
+            <Button x:Name="btnStatisztikak" Grid.Row="0" Margin="5px" Click="btnStatisztikak_Click">
+                <TextBlock TextWrapping="Wrap" TextAlignment="Center">Statisztikák</TextBlock>
+            </Button>
+
+            <Button x:Name="btnTetelModositas" Grid.Row="1" Margin="5px" Click="btnTetelModositas_Click">
+                <TextBlock TextWrapping="Wrap" TextAlignment="Center">Tételek módosítása</TextBlock>
+            </Button>
+
+            <Button x:Name="btnLezartRendelesek" Grid.Row="2" Margin="5px" Click="btnLezartRendelesek_Click">
+                <TextBlock TextWrapping="Wrap" TextAlignment="Center">Lezárt rendelések megtekintése</TextBlock>
+            </Button>
+        </Grid>
+        
+        
     </Grid>
 </Window>

@@ -199,5 +199,11 @@ namespace LRDT
             var tmw = new TetelModositasWindow(Context);
             tmw.ShowDialog();
         }
+
+        private void btnStatisztikak_Click(object sender, RoutedEventArgs e)
+        {
+            var sw = new StatisztikaWindow(Context);
+            sw.ShowDialog();
+        }
     }
 }
